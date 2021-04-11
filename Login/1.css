@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./img/login-bg-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 130%;
+}
+.outer {
+  padding-left: 33%;
+  padding-top: 5%;
+}
+
+.outer1 {
+  background-color: white;
+  width: 50%;
+  margin-left: 0%;
+  border-radius: 25px;
+  opacity: 0.85;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='number'] {
+  width: 100%;
+  padding: 10px 10px 0px 2px;
+  margin: 1px 0 2px 0;
+  font-size: 15px;
+  display: inline-block;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1.3px solid black;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+input[type='number']:focus {
+  border-bottom: 1.5px solid rgb(26, 99, 216);
+  outline: none;
+}
+label {
+  color: #000000;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity: 10;
+}
+.cancelbtn {
+  padding-top: 8px;
+  background-color: #f44336;
+}
+.signupbtn {
+  background-color: #1473e6;
+  padding-top: 8px;
+}
+.cancelbtn,
+.signupbtn {
+  float: right;
+  width: 40%;
+  height: 30px;
+  border-radius: 50px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+fieldset {
+  border: none;
+  padding: 16px;
+}
+.item1 {
+  grid-area: em;
+  height: 70px;
+}
+.item2 {
+  grid-area: fn;
+  height: 70px;
+}
+.item3 {
+  grid-area: ln;
+  height: 70px;
+}
+
+.item4 {
+  grid-area: pass;
+  height: 80px;
+}
+.item5 {
+  grid-area: num;
+  height: 70px;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'em em em em em em'
+    'fn fn fn ln ln ln'
+    'pass pass pass pass pass pass'
+    'num num num num num num';
+  grid-gap: 10px;
+  padding: 10px;
+  -ms-grid-row-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+  text-align: center;
+  padding-top: 10px;
+  margin: 0px;
+}
+h1 {
+  margin: 0%;
+  padding-bottom: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.c {
+  color: #747474;
+  padding: 0%;
+  margin: 0px;
+  font-size: 15px;
+}
+.cr {
+  color: #1473e6;
+}
+a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 100;
+  color: #1473e6;
+}
+span {
+  color: red;
+  margin-top: 0%;
+  padding-top: 0%;
+  font-size: 13px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+#paserror {
+  padding-left: 5px;
+}
+#myDIV1 {
+  display: none;
+  height: 500px;
+}
+#myDIV {
+  height: 500px;
+  padding-top: 30px;
+}
+.form1 {
+  padding-top: 20px;
+}
